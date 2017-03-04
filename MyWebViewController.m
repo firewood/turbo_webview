@@ -19,9 +19,22 @@
     // Do any additional setup after loading the view from its nib.
 }
 
+- (void)dealloc {
+    NSLog(@"WEBVIEW DEALLOCED");
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"];
+    if (path) {
+        NSURL *url = [NSURL URLWithString:path];
+        NSURLRequest *request = [NSURLRequest requestWithURL:url];
+        [self.webView loadRequest:request];
+    }
 }
 
 /*
@@ -34,4 +47,7 @@
 }
 */
 
+- (IBAction)onTouchDismiss:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 @end

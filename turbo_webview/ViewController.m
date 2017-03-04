@@ -7,12 +7,17 @@
 //
 
 #import "ViewController.h"
+#import "MyWebViewController.h"
 
 @interface ViewController ()
+
+@property(nonatomic, retain) MyWebViewController *webVC;
 
 @end
 
 @implementation ViewController
+
+//MyWebViewController *webView;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -26,4 +31,10 @@
 }
 
 
+- (IBAction)onTouchShowNext:(id)sender {
+    if (self.webVC == nil) {
+        self.webVC = [[MyWebViewController alloc] init];
+    }
+    [self presentViewController:self.webVC animated:YES completion:nil];
+}
 @end
