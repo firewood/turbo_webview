@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		204DA42F1E6BC75400703B72 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 204DA42E1E6BC75400703B72 /* images */; };
+		204DA4331E6BD1FF00703B72 /* css in Resources */ = {isa = PBXBuildFile; fileRef = 204DA4321E6BD1FF00703B72 /* css */; };
+		204DA4351E6BD23300703B72 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 204DA4341E6BD23300703B72 /* images */; };
 		20B8B5F21E6A93E2004144F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B8B5F11E6A93E2004144F2 /* main.m */; };
 		20B8B5F51E6A93E2004144F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B8B5F41E6A93E2004144F2 /* AppDelegate.m */; };
 		20B8B5F81E6A93E2004144F2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B8B5F71E6A93E2004144F2 /* ViewController.m */; };
@@ -18,7 +19,6 @@
 		20B8B6161E6A93E2004144F2 /* turbo_webviewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B8B6151E6A93E2004144F2 /* turbo_webviewUITests.m */; };
 		20B8B6281E6B0C82004144F2 /* MyWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B8B6261E6B0C82004144F2 /* MyWebViewController.m */; };
 		20B8B6291E6B0C82004144F2 /* MyWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20B8B6271E6B0C82004144F2 /* MyWebViewController.xib */; };
-		20B8B6661E6B2B6E004144F2 /* css in Resources */ = {isa = PBXBuildFile; fileRef = 20B8B6631E6B2B6E004144F2 /* css */; };
 		20B8B6671E6B2B6E004144F2 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 20B8B6641E6B2B6E004144F2 /* index.html */; };
 		20B8B6681E6B2B6E004144F2 /* js in Resources */ = {isa = PBXBuildFile; fileRef = 20B8B6651E6B2B6E004144F2 /* js */; };
 /* End PBXBuildFile section */
@@ -41,7 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		204DA42E1E6BC75400703B72 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = images; path = Resources/images; sourceTree = "<group>"; };
+		204DA4321E6BD1FF00703B72 /* css */ = {isa = PBXFileReference; lastKnownFileType = folder; name = css; path = Resources/css; sourceTree = "<group>"; };
+		204DA4341E6BD23300703B72 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = images; path = Resources/images; sourceTree = "<group>"; };
 		20B8B5ED1E6A93E2004144F2 /* turbo_webview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = turbo_webview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20B8B5F11E6A93E2004144F2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		20B8B5F31E6A93E2004144F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -61,7 +62,6 @@
 		20B8B6251E6B0C82004144F2 /* MyWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyWebViewController.h; path = ../MyWebViewController.h; sourceTree = "<group>"; };
 		20B8B6261E6B0C82004144F2 /* MyWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyWebViewController.m; path = ../MyWebViewController.m; sourceTree = "<group>"; };
 		20B8B6271E6B0C82004144F2 /* MyWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MyWebViewController.xib; path = ../MyWebViewController.xib; sourceTree = "<group>"; };
-		20B8B6631E6B2B6E004144F2 /* css */ = {isa = PBXFileReference; lastKnownFileType = folder; name = css; path = Resources/css; sourceTree = "<group>"; };
 		20B8B6641E6B2B6E004144F2 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = index.html; path = Resources/index.html; sourceTree = "<group>"; };
 		20B8B6651E6B2B6E004144F2 /* js */ = {isa = PBXFileReference; lastKnownFileType = folder; name = js; path = Resources/js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -160,10 +160,10 @@
 		20B8B62A1E6B182A004144F2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				204DA42E1E6BC75400703B72 /* images */,
-				20B8B6631E6B2B6E004144F2 /* css */,
-				20B8B6641E6B2B6E004144F2 /* index.html */,
+				204DA4321E6BD1FF00703B72 /* css */,
+				204DA4341E6BD23300703B72 /* images */,
 				20B8B6651E6B2B6E004144F2 /* js */,
+				20B8B6641E6B2B6E004144F2 /* index.html */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -274,11 +274,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20B8B6661E6B2B6E004144F2 /* css in Resources */,
 				20B8B6001E6A93E2004144F2 /* LaunchScreen.storyboard in Resources */,
 				20B8B5FD1E6A93E2004144F2 /* Assets.xcassets in Resources */,
 				20B8B6681E6B2B6E004144F2 /* js in Resources */,
-				204DA42F1E6BC75400703B72 /* images in Resources */,
+				204DA4331E6BD1FF00703B72 /* css in Resources */,
+				204DA4351E6BD23300703B72 /* images in Resources */,
 				20B8B6671E6B2B6E004144F2 /* index.html in Resources */,
 				20B8B5FB1E6A93E2004144F2 /* Main.storyboard in Resources */,
 				20B8B6291E6B0C82004144F2 /* MyWebViewController.xib in Resources */,
