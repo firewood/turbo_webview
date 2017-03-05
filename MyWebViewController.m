@@ -2,9 +2,6 @@
 //  MyWebViewController.m
 //  turbo_webview
 //
-//  Created by Kenichi Aramaki on 2017/03/04.
-//  Copyright © 2017年 Pepsilover. All rights reserved.
-//
 
 #import "MyWebViewController.h"
 
@@ -16,7 +13,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    NSLog(@"WEBVIEW DID_LOAD");
+    
+    [self loadPage:[[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"]];
 }
 
 - (void)dealloc {
@@ -29,12 +28,6 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"];
-    if (path) {
-        NSURL *url = [NSURL URLWithString:path];
-        NSURLRequest *request = [NSURLRequest requestWithURL:url];
-        [self.webView loadRequest:request];
-    }
 }
 
 /*
@@ -49,5 +42,13 @@
 
 - (IBAction)onTouchDismiss:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)loadPage:(NSString *)path {
+    if (path) {
+        NSURL *url = [NSURL URLWithString:path];
+        NSURLRequest *request = [NSURLRequest requestWithURL:url];
+        [self.webView loadRequest:request];
+    }
 }
 @end

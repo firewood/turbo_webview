@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		204DA42F1E6BC75400703B72 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 204DA42E1E6BC75400703B72 /* images */; };
 		20B8B5F21E6A93E2004144F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B8B5F11E6A93E2004144F2 /* main.m */; };
 		20B8B5F51E6A93E2004144F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B8B5F41E6A93E2004144F2 /* AppDelegate.m */; };
 		20B8B5F81E6A93E2004144F2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B8B5F71E6A93E2004144F2 /* ViewController.m */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		204DA42E1E6BC75400703B72 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = images; path = Resources/images; sourceTree = "<group>"; };
 		20B8B5ED1E6A93E2004144F2 /* turbo_webview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = turbo_webview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20B8B5F11E6A93E2004144F2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		20B8B5F31E6A93E2004144F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 		20B8B62A1E6B182A004144F2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				204DA42E1E6BC75400703B72 /* images */,
 				20B8B6631E6B2B6E004144F2 /* css */,
 				20B8B6641E6B2B6E004144F2 /* index.html */,
 				20B8B6651E6B2B6E004144F2 /* js */,
@@ -275,6 +278,7 @@
 				20B8B6001E6A93E2004144F2 /* LaunchScreen.storyboard in Resources */,
 				20B8B5FD1E6A93E2004144F2 /* Assets.xcassets in Resources */,
 				20B8B6681E6B2B6E004144F2 /* js in Resources */,
+				204DA42F1E6BC75400703B72 /* images in Resources */,
 				20B8B6671E6B2B6E004144F2 /* index.html in Resources */,
 				20B8B5FB1E6A93E2004144F2 /* Main.storyboard in Resources */,
 				20B8B6291E6B0C82004144F2 /* MyWebViewController.xib in Resources */,
@@ -381,6 +385,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -400,7 +405,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -428,6 +433,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -441,7 +447,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -452,6 +458,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 833PRQ253K;
 				INFOPLIST_FILE = turbo_webview/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.debug.turbo-webview";
@@ -463,6 +470,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 833PRQ253K;
 				INFOPLIST_FILE = turbo_webview/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.debug.turbo-webview";
@@ -535,6 +543,7 @@
 				20B8B61C1E6A93E2004144F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20B8B61D1E6A93E2004144F2 /* Build configuration list for PBXNativeTarget "turbo_webviewTests" */ = {
 			isa = XCConfigurationList;
@@ -543,6 +552,7 @@
 				20B8B61F1E6A93E2004144F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20B8B6201E6A93E2004144F2 /* Build configuration list for PBXNativeTarget "turbo_webviewUITests" */ = {
 			isa = XCConfigurationList;
@@ -551,6 +561,7 @@
 				20B8B6221E6A93E2004144F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
