@@ -4,9 +4,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <WebKit/WebKit.h>
 
-@interface MyWebViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UIWebView *webView;
+@interface MyWebViewController : UIViewController <WKNavigationDelegate>
+@property(strong, nonatomic) WKWebView *webView;
 - (IBAction)onTouchDismiss:(id)sender;
 
 @end
